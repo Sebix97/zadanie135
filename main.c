@@ -86,5 +86,41 @@ float a, b, wynik;
 
 void pole_trojkata() {
 
+/* TODO - osoba3 */
+float a, h, wynik;
+    printf("podaj a: \n");
+    if(scanf("%f", &a)==0)
+        {
+        printf("podaj cyfre\n");
+        exit(EXIT_FAILURE);
+        }
+    else
+    {
+    if(a<=0)
+    {
+
+        printf("podaj a wieksze od 0\n");
+        exit(EXIT_FAILURE);
+    }
+    }
+    printf("podaj h: \n");
+    if(scanf("%f", &h)==0)
+        {
+        printf("podaj cyfre");
+        exit(EXIT_FAILURE);
+        }
+    else
+    {
+    if(h<=0)
+    {
+
+        printf("podaj h wieksze od 0\n");
+        exit(EXIT_FAILURE);
+    }
+    }
+    wynik= ((a * h)/2.0);
+
+
+    printf("%s\n" "%.2f" "%s", "pole trojkata - ", wynik, "\n\n" );
 }
 
