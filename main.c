@@ -48,7 +48,40 @@ int main() {
 }
 
 void pole_prostokata() {
+float a, b, wynik;
+    printf("podaj a: \n");
+    if(scanf("%f", &a)==0)
+        {
+        printf("podaj cyfre\n");
+        exit(EXIT_FAILURE);
+        }
+    else
+    {
+    if(a<=0)
+        {
 
+            printf("podaj a wieksze od 0\n");
+            exit(EXIT_FAILURE);
+        }
+    }
+    printf("podaj b: \n");
+    if(scanf("%f", &b)==0)
+        {
+            printf("podaj cyfre");
+            exit(EXIT_FAILURE);
+        }
+    else
+    {
+    if(b<=0)
+        {
+
+            printf("podaj b wieksze od 0\n");
+            exit(EXIT_FAILURE);
+        }
+    }
+    wynik= a * b;
+
+    printf("%s\n" "%.2f" "%s", "\npole prostokata - ", wynik, "\n\n");
 }
 
 void pole_trojkata() {
